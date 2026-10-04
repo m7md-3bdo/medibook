@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Appointment confirmed | MediBook</title>
+        <link rel="stylesheet" href="Css/all.min.css">
+        <link rel="stylesheet" href="Css/style.css">
+    </head>
+    <body>
+        <header class="navbar">
+            <div class="container nav-wrap">
+                <a href="index.html" class="logo"><i class="fa-solid fa-calendar-plus"></i> MediBook</a>
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="doctors.html" class="active">Find Doctors</a>
+                    <a href="index.html#specialties">Specialties</a>
+                    <a href="about.html">About</a>
+                </nav>
+                <div class="nav-buttons">
+                    <a href="doctors.html#search" class="search-link" aria-label="Search doctors"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="doctors.html" class="login">Log in</a>
+                    <a href="doctors.html" class="btn btn-primary">Get Started</a>
+                </div>
+                <details class="mobile-menu">
+                    <summary><i class="fa-solid fa-bars"></i></summary>
+                    <div class="mobile-links">
+                    <a href="index.html">Home</a>
+                    <a href="doctors.html" class="active">Find Doctors</a>
+                    <a href="index.html#specialties">Specialties</a>
+                    <a href="about.html">About</a>
+                        <a href="doctors.html">Log in</a>
+                        <a href="doctors.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                </details>
+            </div>
+        </header>
+
+
+        <section class="section-sm confirm">
+            <div class="container confirm-wrap">
+                <i class="fa-solid fa-circle-check confirm-icon"></i>
+                <h1>Appointment confirmed.</h1>
+                <p>Your appointment with Dr. Adam Khalil is scheduled for <span data-fill="date">Tuesday, September 24</span> at <span data-fill="time">11:00 AM</span>.</p>
+
+                <div class="confirm-summary">
+                    <h3>Dr. Adam Khalil</h3>
+                    <p class="specialty">General Medicine</p>
+                    <p><span data-fill="date">Tuesday, September 24</span></p>
+                    <p><span data-fill="time">11:00 AM</span></p>
+                    <p>Cairo, Egypt</p>
+                </div>
+
+                <div class="confirm-buttons">
+                    <a href="appointments.html" class="btn btn-primary">View My Appointments</a>
+                    <a href="index.html" class="btn btn-outline">Back to Home</a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container footer-wrap">
+                <div><a href="index.html" class="logo">MediBook</a><p>Healthcare, on your time.</p></div>
+                <div><h4>Explore</h4><a href="doctors.html">Find Doctors</a><a href="index.html#specialties">Specialties</a><a href="appointments.html">Appointments</a></div>
+                <div><h4>Company</h4><a href="about.html">About</a><a href="#">Careers</a><a href="#">Contact</a></div>
+                <div><h4>Support</h4><a href="#">Help Center</a><a href="#">Privacy</a><a href="#">Terms</a></div>
+            </div>
+            <p class="copyright container">© 2026 MediBook. Frontend project.</p>
+        </footer>
+
+        <script src="main.js"></script>
+    </body>
+</html>

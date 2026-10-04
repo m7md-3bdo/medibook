@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MediBook</title>
+        <link rel="stylesheet" href="Css/all.min.css">
+        <link rel="stylesheet" href="Css/style.css">
+
+    </head>
+
+    <body>
+
+        <!-- ================= NAVBAR ================= -->
+        <header class="navbar">
+            <div class="container nav-wrap">
+                <a href="index.html" class="logo"><i class="fa-solid fa-calendar-plus"></i> MediBook</a>
+
+                <nav class="nav-links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="doctors.html">Find Doctors</a>
+                    <a href="#specialties">Specialties</a>
+                    <a href="about.html">About</a>
+                </nav>
+
+                <div class="nav-buttons">
+                    <a href="doctors.html" class="search-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#" class="login">Log in</a>
+                    <a href="doctors.html" class="btn btn-primary">Get Started</a>
+                </div>
+
+                <!-- mobile menu (no JS needed) -->
+                <details class="mobile-menu">
+                    <summary><i class="fa-solid fa-bars"></i></summary>
+                    <div class="mobile-links">
+                        <a href="index.html">Home</a>
+                        <a href="doctors.html">Find Doctors</a>
+                        <a href="#specialties">Specialties</a>
+                        <a href="about.html">About</a>
+                        <a href="#">Log in</a>
+                        <a href="doctors.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                </details>
+            </div>
+        </header>
+
+        <!-- ================= HERO ================= -->
+        <section class="hero">
+            <div class="container hero-wrap">
+                <div class="hero-text">
+                    <p class="eyebrow">Healthcare, on your time.</p>
+                    <h1>Find the right doctor. Book with confidence.</h1>
+                    <p class="hero-desc">Search trusted doctors, explore specialties, and choose an appointment that fits your schedule.</p>
+
+                    <form class="search-box" action="doctors.html">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search by doctor, specialty, or condition" aria-label="Search doctors">
+                        <button type="submit" class="btn btn-primary">Find a doctor</button>
+                    </form>
+                </div>
+
+                <div class="hero-image">
+                    <img src="images/hero.jpg" alt="Doctor talking with a patient in a warm clinic">
+                    <span class="tag tag-top"><i class="fa-solid fa-shield-halved"></i> Verified doctors</span>
+                    <span class="tag tag-bottom"><i class="fa-solid fa-star"></i> 4.9 average rating</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= TRUST ================= -->
+        <section class="trust">
+            <div class="container">
+                <h2>Trusted care, made simpler.</h2>
+                <div class="trust-items">
+                    <div class="trust-item">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <div>
+                            <h3>Verified Doctors</h3>
+                            <p>Profiles reviewed for quality and accuracy.</p>
+                        </div>
+                    </div>
+                <div class="trust-item">
+                    <i class="fa-regular fa-calendar"></i>
+                    <div>
+                    <h3>Flexible Appointments</h3>
+                    <p>Find a time that works for you.</p>
+                    </div>
+                </div>
+                    <div class="trust-item">
+                        <i class="fa-solid fa-lock"></i>
+                        <div>
+                        <h3>Private &amp; Secure</h3>
+                        <p>Your personal information stays protected.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SPECIALTIES ================= -->
+        <section class="section" id="specialties">
+            <div class="container two-cols">
+                <div class="col-title">
+                    <h2>Care for every part of you.</h2>
+                    <p>Explore popular specialties and find the right care for your needs.</p>
+                </div>
+
+                <ul class="specialties-list">
+                <li><a href="doctors.html"><span><i class="fa-solid fa-stethoscope"></i> General Medicine</span> <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="doctors.html"><span><i class="fa-solid fa-tooth"></i> Dentistry</span> <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="doctors.html"><span><i class="fa-solid fa-wand-magic-sparkles"></i> Dermatology</span> <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="doctors.html"><span><i class="fa-solid fa-heart-pulse"></i> Cardiology</span> <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="doctors.html"><span><i class="fa-solid fa-baby"></i> Pediatrics</span> <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="doctors.html"><span><i class="fa-solid fa-bone"></i> Orthopedics</span> <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="doctors.html"><span><i class="fa-solid fa-brain"></i> Mental Health</span> <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="doctors.html"><span><i class="fa-regular fa-eye"></i> Ophthalmology</span> <i class="fa-solid fa-arrow-right"></i></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ================= TOP DOCTORS ================= -->
+        <section class="section doctors-section">
+            <div class="container">
+                <div class="section-title">
+                <h2>Meet doctors patients trust.</h2>
+                <p>Experienced professionals, available when you need them.</p>
+                </div>
+
+                <div class="doctors-grid">
+                <div class="doctor">
+                    <img src="images/dr-adam.jpg" alt="Dr. Adam Khalil">
+                    <h3>Dr. Adam Khalil</h3>
+                    <p class="specialty">General Medicine</p>
+                    <p class="rating"><i class="fa-solid fa-star"></i> 4.9 <span>(124 reviews)</span></p>
+                    <p class="exp">12 years experience</p>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</p>
+                    <a href="doctor-details.html" class="btn btn-outline">View Profile</a>
+                </div>
+
+                <div class="doctor">
+                    <img src="images/dr-lina.jpg" alt="Dr. Lina Hassan">
+                    <h3>Dr. Lina Hassan</h3>
+                    <p class="specialty">Dermatology</p>
+                    <p class="rating"><i class="fa-solid fa-star"></i> 4.8 <span>(96 reviews)</span></p>
+                    <p class="exp">9 years experience</p>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</p>
+                    <a href="doctor-details.html" class="btn btn-outline">View Profile</a>
+                </div>
+
+                <div class="doctor">
+                    <img src="images/dr-omar.jpg" alt="Dr. Omar Nabil">
+                    <h3>Dr. Omar Nabil</h3>
+                    <p class="specialty">Cardiology</p>
+                    <p class="rating"><i class="fa-solid fa-star"></i> 4.9 <span>(87 reviews)</span></p>
+                    <p class="exp">14 years experience</p>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</p>
+                    <a href="doctor-details.html" class="btn btn-outline">View Profile</a>
+                </div>
+
+                    <div class="doctor">
+                        <img src="images/dr-salma.jpg" alt="Dr. Salma Adel">
+                        <h3>Dr. Salma Adel</h3>
+                        <p class="specialty">Pediatrics</p>
+                        <p class="rating"><i class="fa-solid fa-star"></i> 4.9 <span>(112 reviews)</span></p>
+                        <p class="exp">8 years experience</p>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</p>
+                        <a href="doctor-details.html" class="btn btn-outline">View Profile</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= HOW IT WORKS ================= -->
+        <section class="section">
+        <div class="container">
+            <div class="section-title">
+            <h2>Healthcare in three simple steps.</h2>
+            </div>
+
+            <div class="steps">
+            <div class="step">
+                <span class="step-number">1</span>
+                <h3>Find</h3>
+                <p>Search by specialty, doctor, or location.</p>
+            </div>
+            <div class="step">
+                <span class="step-number">2</span>
+                <h3>Choose</h3>
+                <p>Compare profiles and available appointment times.</p>
+            </div>
+            <div class="step">
+                <span class="step-number">3</span>
+                <h3>Book</h3>
+                <p>Pick a convenient time and confirm your visit.</p>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- ================= FEATURES ================= -->
+        <section class="section features" id="about">
+            <div class="container two-cols">
+                <div class="col-title">
+                <h2>A better way to manage your care.</h2>
+                <p>From finding a specialist to keeping track of your appointments, MediBook keeps everything in one simple place.</p>
+                </div>
+
+                <ul class="features-list">
+                <li><i class="fa-regular fa-calendar-check"></i> Easy appointment booking</li>
+                <li><i class="fa-regular fa-user"></i> Doctor profiles</li>
+                <li><i class="fa-regular fa-bell"></i> Appointment reminders</li>
+                <li><i class="fa-solid fa-clipboard-list"></i> Personal appointment history</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ================= CTA ================= -->
+        <section class="cta">
+            <div class="container cta-wrap">
+                <div>
+                <h2>Your next appointment starts here.</h2>
+                <p>Find a doctor who fits your needs and your schedule.</p>
+                </div>
+                <div class="cta-buttons">
+                <a href="doctors.html" class="btn btn-primary">Find a Doctor</a>
+                <a href="#specialties" class="btn btn-light">Explore Specialties</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FOOTER ================= -->
+        <footer class="footer">
+            <div class="container footer-wrap">
+                <div>
+                    <a href="index.html" class="logo">MediBook</a>
+                    <p>Healthcare, on your time.</p>
+                </div>
+                <div>
+                    <h4>Explore</h4>
+                    <a href="doctors.html">Find Doctors</a>
+                    <a href="#specialties">Specialties</a>
+                    <a href="appointments.html">Appointments</a>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <a href="about.html">About</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div>
+                    <h4>Support</h4>
+                    <a href="#">Help Center</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+            <p class="copyright container">© 2026 MediBook. Frontend project.</p>
+        </footer>
+
+        
+        <script src="main.js"></script>
+    </body>
+    
+</html>

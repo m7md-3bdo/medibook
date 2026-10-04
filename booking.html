@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Booking | MediBook</title>
+        <link rel="stylesheet" href="Css/all.min.css">
+        <link rel="stylesheet" href="Css/style.css">
+    </head>
+    <body>
+        <header class="navbar">
+            <div class="container nav-wrap">
+                <a href="index.html" class="logo"><i class="fa-solid fa-calendar-plus"></i> MediBook</a>
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="doctors.html" class="active">Find Doctors</a>
+                    <a href="index.html#specialties">Specialties</a>
+                    <a href="about.html">About</a>
+                </nav>
+                <div class="nav-buttons">
+                    <a href="doctors.html#search" class="search-link" aria-label="Search doctors"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="doctors.html" class="login">Log in</a>
+                    <a href="doctors.html" class="btn btn-primary">Get Started</a>
+                </div>
+                <details class="mobile-menu">
+                    <summary><i class="fa-solid fa-bars"></i></summary>
+                    <div class="mobile-links">
+                    <a href="index.html">Home</a>
+                    <a href="doctors.html" class="active">Find Doctors</a>
+                    <a href="index.html#specialties">Specialties</a>
+                    <a href="about.html">About</a>
+                        <a href="doctors.html">Log in</a>
+                        <a href="doctors.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                </details>
+            </div>
+        </header>
+
+
+        <section class="section-sm">
+            <div class="container">
+                <ol class="progress">
+                    <li class="done"><span>01</span> Doctor</li>
+                    <li class="done"><span>02</span> Date &amp; Time</li>
+                    <li class="current"><span>03</span> Your Details</li>
+                    <li><span>04</span> Confirmation</li>
+                </ol>
+
+                <div class="booking-layout">
+                    <aside class="summary">
+                        <h2>Your appointment</h2>
+                        <p class="summary-name">Dr. Adam Khalil</p>
+                        <p class="specialty">General Medicine</p>
+                        <p><i class="fa-regular fa-calendar"></i> <span data-fill="date">Tuesday, September 24</span></p>
+                        <p><i class="fa-regular fa-clock"></i> <span data-fill="time">11:00 AM</span></p>
+                        <p><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</p>
+                    </aside>
+
+                    <form id="booking-form" novalidate>
+                        <h1>Your details</h1>
+                        <div class="field">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="Enter your full name">
+                            <span class="error" id="name-error" role="alert"></span>
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="name@example.com">
+                            <span class="error" id="email-error" role="alert"></span>
+                        </div>
+                        <div class="field">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" placeholder="+20 100 000 0000">
+                            <span class="error" id="phone-error" role="alert"></span>
+                        </div>
+                        <div class="field">
+                            <label for="reason">Reason for visit</label>
+                            <textarea id="reason" rows="4" placeholder="Briefly describe the reason for your visit..."></textarea>
+                            <span class="error" id="reason-error" role="alert"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Continue</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container footer-wrap">
+                <div><a href="index.html" class="logo">MediBook</a><p>Healthcare, on your time.</p></div>
+                <div><h4>Explore</h4><a href="doctors.html">Find Doctors</a><a href="index.html#specialties">Specialties</a><a href="appointments.html">Appointments</a></div>
+                <div><h4>Company</h4><a href="about.html">About</a><a href="#">Careers</a><a href="#">Contact</a></div>
+                <div><h4>Support</h4><a href="#">Help Center</a><a href="#">Privacy</a><a href="#">Terms</a></div>
+            </div>
+            <p class="copyright container">© 2026 MediBook. Frontend project.</p>
+        </footer>
+
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Find your doctor | MediBook</title>
+        <link rel="stylesheet" href="Css/all.min.css">
+        <link rel="stylesheet" href="Css/style.css">
+    </head>
+    <body>
+        <header class="navbar">
+            <div class="container nav-wrap">
+                <a href="index.html" class="logo"><i class="fa-solid fa-calendar-plus"></i> MediBook</a>
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="doctors.html" class="active">Find Doctors</a>
+                    <a href="index.html#specialties">Specialties</a>
+                    <a href="about.html">About</a>
+                </nav>
+                <div class="nav-buttons">
+                    <a href="doctors.html#search" class="search-link" aria-label="Search doctors"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="doctors.html" class="login">Log in</a>
+                    <a href="doctors.html" class="btn btn-primary">Get Started</a>
+                </div>
+                <details class="mobile-menu">
+                    <summary><i class="fa-solid fa-bars"></i></summary>
+                    <div class="mobile-links">
+                    <a href="index.html">Home</a>
+                    <a href="doctors.html" class="active">Find Doctors</a>
+                    <a href="index.html#specialties">Specialties</a>
+                    <a href="about.html">About</a>
+                        <a href="doctors.html">Log in</a>
+                        <a href="doctors.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                </details>
+            </div>
+        </header>
+
+
+        <section class="page-head">
+            <div class="container">
+                <h1>Find your doctor</h1>
+                <p>Browse trusted specialists and find care that fits your needs.</p>
+            </div>
+        </section>
+
+        <section class="section-sm">
+            <div class="container doctors-layout">
+                <details class="filters" id="filters" open>
+                    <summary><i class="fa-solid fa-sliders"></i> Filters</summary>
+                    <form id="filter-form">
+                        <label for="f-spec">Specialty</label>
+                        <select id="f-spec"><option value="">All specialties</option><option>General Medicine</option><option>Dermatology</option><option>Cardiology</option><option>Pediatrics</option><option>Dentistry</option><option>Orthopedics</option><option>Mental Health</option><option>Ophthalmology</option></select>
+                        <label for="f-loc">Location</label>
+                        <select id="f-loc"><option value="">All locations</option><option>Cairo</option><option>Giza</option><option>Alexandria</option></select>
+                        <label for="f-gender">Gender</label>
+                        <select id="f-gender"><option value="">Any</option><option value="male">Male</option><option value="female">Female</option></select>
+                        <label for="f-rating">Rating</label>
+                        <select id="f-rating"><option value="0">Any rating</option><option value="4">4+ stars</option><option value="3">3+ stars</option></select>
+                        <label class="check"><input type="checkbox" id="f-today"> Available today</label>
+                        <button type="reset" class="btn btn-outline">Clear filters</button>
+                    </form>
+                </details>
+
+                <div>
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="search" placeholder="Search doctors by name or specialty..." aria-label="Search doctors">
+                    </div>
+                    <p class="result-count" id="result-count">4 doctors</p>
+                    <div class="results-grid" id="doctor-list">
+                    <div class="doctor" data-name="adam khalil" data-spec="General Medicine" data-loc="Cairo" data-gender="male" data-rating="4.9" data-today="yes">
+                        <img src="images/dr-adam.jpg" alt="Dr. Adam Khalil">
+                        <h3>Dr. Adam Khalil</h3>
+                        <p class="specialty">General Medicine</p>
+                        <p class="rating"><i class="fa-solid fa-star"></i> 4.9 <span>(124 reviews)</span></p>
+                        <p class="exp">12 years experience</p>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</p>
+                        <p class="availability today"><i class="fa-regular fa-clock"></i> Available today</p>
+                        <a href="doctor-details.html" class="btn btn-outline">View Profile</a>
+                    </div>
+                    <div class="doctor" data-name="lina hassan" data-spec="Dermatology" data-loc="Cairo" data-gender="female" data-rating="4.8" data-today="no">
+                        <img src="images/dr-lina.jpg" alt="Dr. Lina Hassan">
+                        <h3>Dr. Lina Hassan</h3>
+                        <p class="specialty">Dermatology</p>
+                        <p class="rating"><i class="fa-solid fa-star"></i> 4.8 <span>(96 reviews)</span></p>
+                        <p class="exp">9 years experience</p>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</p>
+                        <p class="availability"><i class="fa-regular fa-clock"></i> Next available: tomorrow</p>
+                        <a href="doctor-details.html" class="btn btn-outline">View Profile</a>
+                    </div>
+                    <div class="doctor" data-name="omar nabil" data-spec="Cardiology" data-loc="Giza" data-gender="male" data-rating="4.9" data-today="yes">
+                        <img src="images/dr-omar.jpg" alt="Dr. Omar Nabil">
+                        <h3>Dr. Omar Nabil</h3>
+                        <p class="specialty">Cardiology</p>
+                        <p class="rating"><i class="fa-solid fa-star"></i> 4.9 <span>(87 reviews)</span></p>
+                        <p class="exp">14 years experience</p>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Giza, Egypt</p>
+                        <p class="availability today"><i class="fa-regular fa-clock"></i> Available today</p>
+                        <a href="doctor-details.html" class="btn btn-outline">View Profile</a>
+                    </div>
+                    <div class="doctor" data-name="salma adel" data-spec="Pediatrics" data-loc="Cairo" data-gender="female" data-rating="4.9" data-today="no">
+                        <img src="images/dr-salma.jpg" alt="Dr. Salma Adel">
+                        <h3>Dr. Salma Adel</h3>
+                        <p class="specialty">Pediatrics</p>
+                        <p class="rating"><i class="fa-solid fa-star"></i> 4.9 <span>(112 reviews)</span></p>
+                        <p class="exp">8 years experience</p>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</p>
+                        <p class="availability"><i class="fa-regular fa-clock"></i> Next available: tomorrow</p>
+                        <a href="doctor-details.html" class="btn btn-outline">View Profile</a>
+                    </div>
+                    </div>
+                    <p class="no-results" id="no-results" hidden>No doctors match these filters. Try clearing a filter or searching a different name.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container footer-wrap">
+                <div><a href="index.html" class="logo">MediBook</a><p>Healthcare, on your time.</p></div>
+                <div><h4>Explore</h4><a href="doctors.html">Find Doctors</a><a href="index.html#specialties">Specialties</a><a href="appointments.html">Appointments</a></div>
+                <div><h4>Company</h4><a href="about.html">About</a><a href="#">Careers</a><a href="#">Contact</a></div>
+                <div><h4>Support</h4><a href="#">Help Center</a><a href="#">Privacy</a><a href="#">Terms</a></div>
+            </div>
+            <p class="copyright container">© 2026 MediBook. Frontend project.</p>
+        </footer>
+
+        <script src="main.js"></script>
+    </body>
+</html>

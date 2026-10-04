@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Appointments | MediBook</title>
+        <link rel="stylesheet" href="Css/all.min.css">
+        <link rel="stylesheet" href="Css/style.css">
+    </head>
+    <body>
+
+
+        <div class="dash">
+            <aside class="side">
+                <a href="index.html" class="logo"><i class="fa-solid fa-calendar-plus"></i> MediBook</a>
+                <nav><a href="#"><i class="fa-solid fa-table-columns"></i> Dashboard</a><a href="appointments.html" class="active"><i class="fa-solid fa-clipboard-list"></i> My Appointments</a><a href="#"><i class="fa-solid fa-heart"></i> Favorites</a><a href="#"><i class="fa-solid fa-user"></i> My Profile</a><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></nav>
+                <a href="index.html" class="logout"><i class="fa-solid fa-right-from-bracket"></i> Log out</a>
+            </aside>
+
+            <main class="dash-main">
+                <h1>My Appointments</h1>
+                <div class="tabs" role="tablist">
+                    <button type="button" class="tab active" data-tab="upcoming" role="tab">Upcoming</button>
+                    <button type="button" class="tab" data-tab="past" role="tab">Past</button>
+                </div>
+
+                <div class="tab-panel" id="upcoming">
+                    <article class="appt">
+                        <div><h3>Dr. Adam Khalil</h3><p class="specialty">General Medicine</p></div>
+                        <div class="appt-when">
+                            <p><i class="fa-regular fa-calendar"></i> Tuesday, September 24</p>
+                            <p><i class="fa-regular fa-clock"></i> 11:00 AM</p>
+                            <p><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</p>
+                        </div>
+                        <div class="appt-end">
+                            <span class="status ok">Confirmed</span>
+                            <a href="doctor-details.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </article>
+                    <article class="appt">
+                        <div><h3>Dr. Lina Hassan</h3><p class="specialty">Dermatology</p></div>
+                        <div class="appt-when">
+                            <p><i class="fa-regular fa-calendar"></i> Friday, September 27</p>
+                            <p><i class="fa-regular fa-clock"></i> 03:00 PM</p>
+                            <p><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</p>
+                        </div>
+                        <div class="appt-end">
+                            <span class="status ok">Confirmed</span>
+                            <a href="doctor-details.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="tab-panel" id="past" hidden>
+                    <article class="appt">
+                        <div><h3>Dr. Omar Nabil</h3><p class="specialty">Cardiology</p></div>
+                        <div class="appt-when">
+                            <p><i class="fa-regular fa-calendar"></i> Monday, August 12</p>
+                            <p><i class="fa-regular fa-clock"></i> 09:00 AM</p>
+                            <p><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</p>
+                        </div>
+                        <div class="appt-end">
+                            <span class="status done">Completed</span>
+                            <a href="doctor-details.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </article>
+                    <article class="appt">
+                        <div><h3>Dr. Salma Adel</h3><p class="specialty">Pediatrics</p></div>
+                        <div class="appt-when">
+                            <p><i class="fa-regular fa-calendar"></i> Thursday, July 4</p>
+                            <p><i class="fa-regular fa-clock"></i> 01:00 PM</p>
+                            <p><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</p>
+                        </div>
+                        <div class="appt-end">
+                            <span class="status done">Completed</span>
+                            <a href="doctor-details.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </article>
+                </div>
+            </main>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>

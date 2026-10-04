@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dr. Adam Khalil | MediBook</title>
+        <link rel="stylesheet" href="Css/all.min.css">
+        <link rel="stylesheet" href="Css/style.css">
+    </head>
+    <body>
+        <header class="navbar">
+            <div class="container nav-wrap">
+                <a href="index.html" class="logo"><i class="fa-solid fa-calendar-plus"></i> MediBook</a>
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="doctors.html" class="active">Find Doctors</a>
+                    <a href="index.html#specialties">Specialties</a>
+                    <a href="about.html">About</a>
+                </nav>
+                <div class="nav-buttons">
+                    <a href="doctors.html#search" class="search-link" aria-label="Search doctors"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="doctors.html" class="login">Log in</a>
+                    <a href="doctors.html" class="btn btn-primary">Get Started</a>
+                </div>
+                <details class="mobile-menu">
+                    <summary><i class="fa-solid fa-bars"></i></summary>
+                    <div class="mobile-links">
+                    <a href="index.html">Home</a>
+                    <a href="doctors.html" class="active">Find Doctors</a>
+                    <a href="index.html#specialties">Specialties</a>
+                    <a href="about.html">About</a>
+                        <a href="doctors.html">Log in</a>
+                        <a href="doctors.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                </details>
+            </div>
+        </header>
+
+
+        <section class="section-sm">
+            <div class="container profile">
+                <img src="images/dr-adam.jpg" alt="Dr. Adam Khalil" class="profile-img">
+                <div class="profile-info">
+                    <p class="specialty">General Medicine</p>
+                    <h1>Dr. Adam Khalil</h1>
+                    <p class="rating"><i class="fa-solid fa-star"></i> 4.9 <span>(124 reviews)</span></p>
+                    <ul class="meta">
+                        <li><i class="fa-regular fa-clock"></i> 12 years experience</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</li>
+                    </ul>
+                    <p class="bio">Dr. Adam Khalil is a general medicine specialist focused on preventive care and long-term patient wellbeing.</p>
+                    <h3>Areas of expertise</h3>
+                    <ul class="tags">
+                        <li>Preventive Care</li>
+                        <li>Chronic Conditions</li>
+                        <li>General Consultation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section schedule">
+            <div class="container">
+                <h2>Choose a convenient time</h2>
+                <div class="dates">
+                    <button type="button" class="date-btn" data-date="Monday, September 23" aria-pressed="false"><span>MON</span><strong>23</strong></button>
+                    <button type="button" class="date-btn selected" data-date="Tuesday, September 24" aria-pressed="true"><span>TUE</span><strong>24</strong></button>
+                    <button type="button" class="date-btn" data-date="Wednesday, September 25" aria-pressed="false"><span>WED</span><strong>25</strong></button>
+                    <button type="button" class="date-btn" data-date="Thursday, September 26" aria-pressed="false"><span>THU</span><strong>26</strong></button>
+                    <button type="button" class="date-btn" data-date="Friday, September 27" aria-pressed="false"><span>FRI</span><strong>27</strong></button>
+                    <button type="button" class="date-btn" data-date="Saturday, September 28" aria-pressed="false"><span>SAT</span><strong>28</strong></button>
+                    
+                </div>
+                <div class="times">
+                    <button type="button" class="time-btn" aria-pressed="false">09:00 AM</button>
+                    <button type="button" class="time-btn" aria-pressed="false">10:30 AM</button>
+                    <button type="button" class="time-btn selected" aria-pressed="true">11:00 AM</button>
+                    <button type="button" class="time-btn" aria-pressed="false">01:00 PM</button>
+                    <button type="button" class="time-btn" aria-pressed="false">03:30 PM</button>
+                    <button type="button" class="time-btn" aria-pressed="false">05:00 PM</button>
+                    
+                </div>
+                <a href="booking.html" class="btn btn-primary">Book Appointment</a>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container footer-wrap">
+                <div><a href="index.html" class="logo">MediBook</a><p>Healthcare, on your time.</p></div>
+                <div><h4>Explore</h4><a href="doctors.html">Find Doctors</a><a href="index.html#specialties">Specialties</a><a href="appointments.html">Appointments</a></div>
+                <div><h4>Company</h4><a href="about.html">About</a><a href="#">Careers</a><a href="#">Contact</a></div>
+                <div><h4>Support</h4><a href="#">Help Center</a><a href="#">Privacy</a><a href="#">Terms</a></div>
+            </div>
+            <p class="copyright container">© 2026 MediBook. Frontend project.</p>
+        </footer>
+
+        <script src="main.js"></script>
+    </body>
+</html>
